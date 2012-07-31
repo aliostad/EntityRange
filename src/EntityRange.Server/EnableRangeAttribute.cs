@@ -85,7 +85,9 @@ namespace EntityRange.Server
 
 						// invoke 
 						value = skipMethod.Invoke(null, new object[] { value,  from});
-						value = takeMethod.Invoke(null, new object[] { value, to - from + 1 });
+						if(to.HasValue)
+							value = takeMethod.Invoke(null, new object[] { value, to - from + 1 });
+						
 						objectContent.Value = value;
 						
 						// set status to 206

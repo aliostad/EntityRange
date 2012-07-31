@@ -12,7 +12,7 @@ namespace EntityRange.Server.Controllers
 	public class CarController : ApiController
 	{
 
-		[EnableRangeFilter]
+		[EnableRange]
 		public IEnumerable<Car> Get()
 		{
 			return CarRepository.Instance.Get();

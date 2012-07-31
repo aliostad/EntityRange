@@ -13,7 +13,7 @@ using System.Web.Http.Filters;
 
 namespace EntityRange.Server
 {
-	public class EnableRangeFilterAttribute : ActionFilterAttribute
+	public class EnableRangeAttribute : ActionFilterAttribute
 	{
 	
 		private Type _elementType;

@@ -87,7 +87,7 @@
   <ItemGroup>
     <Compile Include="Constants.cs" />
     <Compile Include="Controllers\CarController.cs" />
-    <Compile Include="EnableRangeFilterAttribute.cs" />
+    <Compile Include="EnableRangeAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
